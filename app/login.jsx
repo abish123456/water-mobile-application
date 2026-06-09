@@ -128,8 +128,8 @@ export default function LoginPage() {
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', padding: 20 }}>
         <View className="bg-white rounded-2xl shadow-sm p-6 w-full max-w-md self-center border border-sky-100">
           <View className="items-center mb-6">
-            <View className="w-20 h-20 bg-gray-100 rounded-full items-center justify-center mb-3">
-              <Text className="text-xl font-bold text-gray-500">Logo</Text>
+            <View className="w-24 h-24 rounded-full items-center justify-center mb-3 overflow-hidden bg-white shadow-sm border border-gray-100">
+              <Image source={require('../assets/icon.png')} className="w-full h-full" resizeMode="contain" />
             </View>
             <Text className="text-3xl font-bold text-black">SABOLS</Text>
             <Text className="text-base text-gray-500 mt-1">Watercan Ordering System</Text>
