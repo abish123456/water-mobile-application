@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, RefreshControl } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, RefreshControl, Linking } from 'react-native';
 import Toast from 'react-native-toast-message';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { Package, Clock, CheckCircle2, XCircle, Truck, AlertCircle, ChevronDown, ChevronUp, Wallet, MapPin, ChevronLeft, ChevronRight, Calendar } from 'lucide-react-native';
@@ -492,6 +492,14 @@ export default function OrdersScreen() {
           </TouchableOpacity>
         </View>
       )}
+
+      {/* Powered By STEDAXIS */}
+      <View className="items-center justify-center py-6 mt-4 opacity-70">
+        <Text className="text-[10px] text-gray-400">Powered by</Text>
+        <TouchableOpacity onPress={() => Linking.openURL('https://www.stedaxis.com')}>
+          <Text className="text-xs font-bold text-gray-500 mt-0.5 tracking-wider">STEDAXIS</Text>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 }

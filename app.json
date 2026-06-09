@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "water-mobile-app",
+    "name": "Sabols - watercan delivery app",
     "slug": "water-mobile-app",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "scheme": "waterapp",
     "ios": {
@@ -20,7 +21,11 @@
       "typedRoutes": true
     },
     "android": {
-      "package": "com.anonymous.watermobileapp"
+      "package": "com.anonymous.watermobileapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "extra": {
       "router": {},

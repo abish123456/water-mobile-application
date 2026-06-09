@@ -446,6 +446,14 @@ export default function CartScreen() {
           )}
         </TouchableOpacity>
       </View>
+
+      {/* Powered By STEDAXIS */}
+      <View className="items-center justify-center py-6 mt-4 opacity-70">
+        <Text className="text-[10px] text-gray-400">Powered by</Text>
+        <TouchableOpacity onPress={() => Linking.openURL('https://www.stedaxis.com')}>
+          <Text className="text-xs font-bold text-gray-500 mt-0.5 tracking-wider">STEDAXIS</Text>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 }
